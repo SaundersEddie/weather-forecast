@@ -5,7 +5,7 @@
 // Search
 
 import React from 'react';
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, InputGroup, FormControl } from "react-bootstrap";
 import './WeatherNavbar.css';
 
 const WeatherNavbar = () => {
@@ -23,12 +23,18 @@ const WeatherNavbar = () => {
                       <NavDropdown.Item href="#action/3.2">
                         Another action
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.3">About</NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item href="#action/3.4">
                         Separated link
                       </NavDropdown.Item>
                     </NavDropdown>
+                    <InputGroup size="sm" className="mb-3">
+                      <InputGroup.Prepend>
+                      <InputGroup.Text id="inputGroup-sizing-sm">Enter Zip Code</InputGroup.Text>
+                      </InputGroup.Prepend>
+                      <FormControl aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                    </InputGroup>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>
