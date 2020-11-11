@@ -1,6 +1,6 @@
 import WeatherNavbar from './components/Navbar/WeatherNavbar';
 import DisplayWeather from './components/DisplayWeather/DisplayWeather';
-
+import WeatherAPI from './utils/API';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -10,6 +10,7 @@ function App() {
     <div className="container">
       <WeatherNavbar />
       <DisplayWeather />
+      <WeatherAPI />
     </div>
   );
 }
